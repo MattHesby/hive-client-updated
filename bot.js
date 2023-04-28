@@ -3,11 +3,20 @@ function bot() {
     bot.PF = require('pathfinding');
     bot.io = require('socket.io-client');
     if (!bot.isTest) {
-        bot.socket = require('socket.io-client')(bot.hostURL);
+        bot.socket = require('socket.io-client')(bot.hostURL, 
+            {
+                transports: [ "websocket", "polling"],
+                rejectUnauthorized: false,
+                withCredentials: true
+                });
         bot.socket.emit("name", bot.key);
     }
     else {
-        bot.socket = require('socket.io-client')(bot.testHostURL);
+        bot.socket = require('socket.io-client')(bot.testHostURL, {
+            transports: [ "websocket", "polling"],
+            rejectUnauthorized: false,
+            withCredentials: true
+            });
         bot.socket.emit("name", bot.testKey);
     }
 

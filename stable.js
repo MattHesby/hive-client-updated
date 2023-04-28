@@ -1,9 +1,9 @@
 var bot = require("./bot"); //Don't change this
-bot.hostURL = 'http://TEACHERWORKSPACENAME-TEACHERUSERNAME.c9users.io'; //Put the server url/IP adress here!
+bot.hostURL = 'https://hivefornueva.herokuapp.com'; //Put the server url/IP adress here!
 bot.key = "BOTKEYHERE"; //Set your bot key to this string!
 
 /* TEST CODE */
-bot.testHostURL = 'http://STUDENTWORKSPACENAME-STUDENTUSERNAME.c9users.io'; //Put the server url/IP adress here!
+bot.testHostURL = 'https://hivefornueva.herokuapp.com'; //Put the server url/IP adress here!
 bot.testKey = "testrun"; //Do Not Change This Key!
 bot.isTest = false;
 /* End Test Code */
