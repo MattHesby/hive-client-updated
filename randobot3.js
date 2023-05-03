@@ -1,6 +1,6 @@
 var bot = require("./bot"); //Don't change this
 bot.hostURL = 'https://hivefornueva.herokuapp.com'; //Put the server url/IP adress here!
-bot.key = "BOTKEYHERE"; //Set your bot key to this string!
+bot.key = "t3"; //Set your bot key to this string!
 
 /* TEST CODE */
 bot.testHostURL = 'http://localhost:3000'; //Put the server url/IP adress here!

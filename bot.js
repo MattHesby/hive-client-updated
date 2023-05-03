@@ -25,6 +25,10 @@ function bot() {
     bot.savedData = [];
 
     var globalGame;
+    bot.socket.on("no join", () => {
+        console.log("could not join game. closing connection");
+        bot.socket.disconnect();
+    })
     bot.socket.on("update", function (game) {
 
         console.log("----------------------------------------------")
