@@ -1,6 +1,18 @@
 {
-  "testrun": {
-    "username": "myBots",
+  "mytestbot": {
+    "username": "mytestbot",
+    "score": 115
+  },
+  "randobot1": {
+    "username": "randobot1",
+    "score": 115
+  },
+  "randobot2": {
+    "username": "randobot2",
+    "score": 115
+  },
+  "randobot3": {
+    "username": "randobot3",
     "score": 115
   }
 }

@@ -10,6 +10,7 @@ function bot() {
                 withCredentials: true
                 });
         bot.socket.emit("name", bot.key);
+
     }
     else {
         bot.socket = require('socket.io-client')(bot.testHostURL, {
@@ -28,12 +29,12 @@ function bot() {
 
         console.log("----------------------------------------------")
         console.log("      \x1b[4m%s\x1b[0m", "Game number " + (game.gameId + 1));
-        console.log("\x1b[31m", "Energy - Base Energy", "\x1b[0m");
+        console.log("\x1b[31m", "pollen - Base pollen", "\x1b[0m");
 
-        console.log("\x1b[31m", "My Bot " + "\x1b[0m" + game.myBot.energy + " - " + game.bases[game.idTurn].energy);
+        console.log("\x1b[31m", "My Bot " + "\x1b[0m" + game.myBot.pollen + " - " + game.bases[game.idTurn].pollen);
         for (var i = 0; i < game.players.length; i++) {
             if (i != game.myBot.id) {
-                console.log("\x1b[31m", "Bot " + (i + 1) + "\x1b[0m " + game.players[i].energy + " - " + game.bases[i].energy);
+                console.log("\x1b[31m", "Bot " + (i + 1) + "\x1b[0m " + game.players[i].pollen + " - " + game.bases[i].pollen);
             }
         }
         console.log("\x1b[33m", "Turn: " + game.turn + "/" + game.totalTurns, "\x1b[0m")
